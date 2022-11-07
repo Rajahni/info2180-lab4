@@ -1,15 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
-    <script src="app.js"></script>
-    <title>Superhero Lister</title>
-</head>
-<body>
-    <h1>Avengers Character Search</h1>
-    <input id="srchbtn" type="button" value="Search">
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+        <script src="app.js"></script>
+        <link rel="stylesheet" href="styles.css">
+        <title>Superhero Lister</title>
+    </head>
+
+    <body>
+        <header>
+            <img src="avengers.png" alt="Avengers Logo">
+            <h1>Avengers Character Search</h1>
+        </header>
+        <main>
+            <div>
+                <p id="srchby">Search by Full Name or Alias</p>
+                <input type="text" id="srchbox" placeholder="Search hero name or alias"/>
+                <input id="srchbtn" type="button" value="Search"/>
+                
+                <div id="resultsDiv">
+                    <p>RESULT</p>
+                </div>
+
+                <div id="innerdiv"></div>
+                
+
+                <div id="srchresults"></div>
+            </div>
+        </main>
+        <footer>
+            <div>
+                <p>Copyright &copy; 2022, Rajahni Cunningham</p>
+            </div>
+        </footer>
+    </body>
+    
 </html>
