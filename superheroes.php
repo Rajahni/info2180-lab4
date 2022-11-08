@@ -69,10 +69,9 @@ $superheroes = [
 
 ?>
 
-<?php 
-    $query = $_GET["query"]; 
-    $found = false; 
-?>
+<?php $query = filter_input(INPUT_GET, $_GET["query"]); ?>
+<?php $found = false; ?>
+
 
 <?php foreach ($superheroes as $superhero): ?>
     <?php if ($superhero["alias"] == $query || $superhero["name"] == $query): ?>
